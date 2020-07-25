@@ -2,26 +2,32 @@
 
 Allows you to use i3 in a GNOME-Flashback session. Large parts of this are based on the existing [`i3-gnome`](https://github.com/lvillani/i3-gnome) project.
 
-This has been tested working on GNOME version **3.34**.
+This has been tested working on GNOME version **3.36**.
+
+This is a fork of https://github.com/deuill/i3-gnome-flashback, which fixes compatibility with GNOME 3.36 by adding 25-gnome-flashback.gschema.override to do the following:
+
+1. Disable the desktop icons (not because they are bad but because i3 (unlike awseome for instance) cannot handle them, it treats them like any other window.
+
+2. Enable the root-background to allow you to use gnome-control-center to set the wallpaper
+
+3. Replace the minimize, maximize and close buttons in the headerbar of most GNOME apps with just the appmenu.
 
 # Installation
 
-For Arch users see the [AUR package](https://aur.archlinux.org/packages/i3-gnome-flashback/) for a more easy intallation.
-
-For Ubuntu (19.10), ensure prerequisites are installed:
+For Ubuntu, ensure prerequisites are installed:
 ```
 sudo apt install i3 gnome-flashback build-essential
 ```
+For Arch Linux, ensure prerequisites are installed:
+```
+sudo pacman -Syuv --needed i3 gnome-flashback make git
+```
 Then install i3-gnome-flashback:
 ```
+git clone https://github.com/SkyyySi/i3-gnome-flashback.git
+cd i3-gnome-flashback
 sudo make install
 ```
-And to prevent Nautilus from taking over the screen upon login, run this:
-```
-gsettings set org.gnome.desktop.background show-desktop-icons false
-```
-
-For other distributions, clone this repository and run `make install` with root priviledges.
 
 # Notes
 
