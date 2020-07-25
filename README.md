@@ -20,7 +20,7 @@ sudo apt install i3 gnome-flashback build-essential
 ```
 For Arch Linux, ensure prerequisites are installed:
 ```
-sudo pacman -Syuv --needed i3 gnome-flashback make git
+sudo pacman -Syuv --needed i3-gaps gnome-flashback make git
 ```
 Then install i3-gnome-flashback:
 ```
