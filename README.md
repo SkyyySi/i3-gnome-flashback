@@ -14,6 +14,13 @@ This is a fork of https://github.com/deuill/i3-gnome-flashback, which fixes comp
 
 # Installation
 
+Arch users can simply execute these commands:
+```
+git clone https://github.com/SkyyySi/i3-gnome-flashback-git.git
+cd i3-gnome-flashback-git
+makepkg -sifc
+```
+
 For Ubuntu, ensure prerequisites are installed:
 ```
 sudo apt install i3 gnome-flashback build-essential
