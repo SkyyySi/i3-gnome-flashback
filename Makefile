@@ -12,7 +12,7 @@ install:
 	glib-compile-schemas $(PREFIX)/share/glib-2.0/schemas/
 
 uninstall:
-	rm -f $(PREFIX)/share/glib-2.0/schemas/25-gnome-flashback.gschema.override \
+	rm -f $(PREFIX)/share/glib-2.0/schemas/25_i3-gnome-flashback.gschema.override \
 	      $(PREFIX)/bin/i3-gnome-flashback \
 	      $(PREFIX)/bin/i3-gnome-flashback-session \
 	      $(PREFIX)/share/gnome-session/sessions/i3-gnome-flashback.session \
