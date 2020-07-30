@@ -1,6 +1,5 @@
 [org.gnome.desktop.wm.preferences:i3-GNOME-Flashback]
 button-layout=':appmenu'
 
-[org.gnome.gnome-flashback:i3-GNOME-Flashback]
-desktop=false
-root-background=true
+[org.gnome.desktop.background:i3-GNOME-Flashback]
+show-desktop-icons=false
