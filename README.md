@@ -39,3 +39,13 @@ sudo make install
 # Notes
 
 To understand how the files in this repo work to initialize an i3 and GNOME session, refer to this [GNOME wiki](https://wiki.gnome.org/Projects/SessionManagement/RequiredComponents) on session management.
+
+# Specificities of this branch
+
+This `gnome-3.28` branch backports improvements to gnome version **3.28** and has been tested under Ubuntu 18.
+
+To use easily the screen saver, you can add the line
+```
+bindsym Mod1+Control+l exec gnome-screensaver-command -l
+```
+into the `~/.config/i3/config` file.
